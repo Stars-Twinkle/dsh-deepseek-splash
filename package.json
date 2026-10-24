@@ -1,16 +1,16 @@
 {
-  "name": "@starstwinkle/dsh-deepseek-splash",
-  "version": "1.0.2",
+  "name": "@stars-twinkle/dsh-deepseek-splash",
+  "version": "1.0.3",
   "description": "DeepSeek-branded boot splash for the Harness Web UI: logo, loaded sessions, plugins and skills, then a fade into the conversation.",
   "license": "MIT",
-  "author": "StarsTwinkle",
-  "homepage": "https://github.com/StarsTwinkle/dsh-deepseek-splash#readme",
+  "author": "Stars-Twinkle",
+  "homepage": "https://github.com/Stars-Twinkle/dsh-deepseek-splash#readme",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/StarsTwinkle/dsh-deepseek-splash.git"
+    "url": "git+https://github.com/Stars-Twinkle/dsh-deepseek-splash.git"
   },
   "bugs": {
-    "url": "https://github.com/StarsTwinkle/dsh-deepseek-splash/issues"
+    "url": "https://github.com/Stars-Twinkle/dsh-deepseek-splash/issues"
   },
   "keywords": ["dsh", "deepseek-harness", "plugin", "bundle", "splash", "startup"],
   "type": "module",

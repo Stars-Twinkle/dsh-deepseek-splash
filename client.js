@@ -1,5 +1,5 @@
 window.__ModuleLoader__.load({
-  id: '@starstwinkle/dsh-deepseek-splash',
+  id: '@stars-twinkle/dsh-deepseek-splash',
   factory(require) {
     const React = require('react')
     const h = React.createElement

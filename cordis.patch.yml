@@ -1,4 +1,4 @@
 - insert:
     - id: deepseek-splash
-      name: '@starstwinkle/dsh-deepseek-splash'
+      name: '@stars-twinkle/dsh-deepseek-splash'
       config: {}
