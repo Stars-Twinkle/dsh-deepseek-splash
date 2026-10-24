@@ -731,8 +731,20 @@ window.__ModuleLoader__.load({
     return {
       inject: ['slots', 'locale'],
       apply(ctx) {
-        ctx.effect(() => ctx.locale.register('dsSplash', 'en', EN), 'deepseek-splash: en dictionary')
-        ctx.effect(() => ctx.locale.register('dsSplash', 'zh', ZH), 'deepseek-splash: zh dictionary')
+        /* A stale page can keep an older copy of this module alive; registering the
+         * same locale namespace twice must not break the splash. */
+        const registerLocale = (locale, dict, label) => {
+          ctx.effect(() => {
+            try {
+              return ctx.locale.register('dsSplash', locale, dict)
+            } catch (error) {
+              console.warn('deepseek-splash: locale already registered, reusing it', error)
+              return () => {}
+            }
+          }, label)
+        }
+        registerLocale('en', EN, 'deepseek-splash: en dictionary')
+        registerLocale('zh', ZH, 'deepseek-splash: zh dictionary')
         const t = ctx.locale.bind('dsSplash')
         ctx.slots.inject('shell.overlay', () =>
           ctx.slots.register(

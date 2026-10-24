@@ -1,6 +1,6 @@
 {
   "name": "@stars-twinkle/dsh-deepseek-splash",
-  "version": "1.0.3",
+  "version": "1.0.4",
   "description": "DeepSeek-branded boot splash for the Harness Web UI: logo, loaded sessions, plugins and skills, then a fade into the conversation.",
   "license": "MIT",
   "author": "Stars-Twinkle",
