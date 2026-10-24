@@ -1,0 +1,6 @@
+{
+  "meta": {
+    "title": "DeepSeek Boot Splash",
+    "description": "Plays a DeepSeek-branded boot sequence that lists loaded sessions, plugins, and skills, then fades into the conversation window."
+  }
+}

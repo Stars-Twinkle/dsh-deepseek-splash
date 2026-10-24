@@ -1,0 +1,41 @@
+{
+  "name": "@starstwinkle/dsh-deepseek-splash",
+  "version": "1.0.2",
+  "description": "DeepSeek-branded boot splash for the Harness Web UI: logo, loaded sessions, plugins and skills, then a fade into the conversation.",
+  "license": "MIT",
+  "author": "StarsTwinkle",
+  "homepage": "https://github.com/StarsTwinkle/dsh-deepseek-splash#readme",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/StarsTwinkle/dsh-deepseek-splash.git"
+  },
+  "bugs": {
+    "url": "https://github.com/StarsTwinkle/dsh-deepseek-splash/issues"
+  },
+  "keywords": ["dsh", "deepseek-harness", "plugin", "bundle", "splash", "startup"],
+  "type": "module",
+  "exports": {
+    ".": "./index.js",
+    "./client": "./client.js",
+    "./locale/*.json": "./locale/*.json",
+    "./icon": "./icon.svg"
+  },
+  "files": [
+    "index.js",
+    "client.js",
+    "cordis.patch.yml",
+    "locale/*.json",
+    "icon.svg",
+    "brand.svg",
+    "README.md",
+    "LICENSE"
+  ],
+  "dsh": {
+    "bundle": { "patch": "./cordis.patch.yml" },
+    "client": {
+      "platform": "web",
+      "immediately": true,
+      "inject": ["@deepseek-ai/dsh-client-ui-conversation"]
+    }
+  }
+}

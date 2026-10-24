@@ -1,0 +1,29 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 256" width="256" height="256">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#0b1224"/>
+      <stop offset="1" stop-color="#04060d"/>
+    </linearGradient>
+    <linearGradient id="mark" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#8fd6ff"/>
+      <stop offset="0.55" stop-color="#3b82f6"/>
+      <stop offset="1" stop-color="#6d5dfc"/>
+    </linearGradient>
+    <linearGradient id="arc" x1="0" y1="1" x2="1" y2="0">
+      <stop offset="0" stop-color="#0ea5e9"/>
+      <stop offset="1" stop-color="#38bdf8"/>
+    </linearGradient>
+    <radialGradient id="halo" cx="0.5" cy="0.42" r="0.55">
+      <stop offset="0" stop-color="#1d4ed8" stop-opacity="0.55"/>
+      <stop offset="1" stop-color="#1d4ed8" stop-opacity="0"/>
+    </radialGradient>
+  </defs>
+  <rect width="256" height="256" rx="56" fill="url(#bg)"/>
+  <circle cx="128" cy="118" r="98" fill="url(#halo)"/>
+  <circle cx="128" cy="118" r="82" fill="none" stroke="#7ac8ff" stroke-opacity="0.3" stroke-width="2" stroke-dasharray="4 12"/>
+  <circle cx="128" cy="118" r="66" fill="none" stroke="#7ac8ff" stroke-opacity="0.18" stroke-width="2" stroke-dasharray="24 14 3 14"/>
+  <path d="M132 36 A82 82 0 0 1 210 114" fill="none" stroke="url(#arc)" stroke-width="4" stroke-linecap="round"/>
+  <path d="M92 64 H126 A54 54 0 0 1 126 172 H92 Z M118 90 H126 A28 28 0 0 1 126 146 H118 Z"
+        fill="url(#mark)" fill-rule="evenodd"/>
+  <path d="M168 190 c12 -4 21 -13 24 -25 c-13 2 -22 11 -24 25 z" fill="url(#arc)" opacity="0.9"/>
+</svg>
